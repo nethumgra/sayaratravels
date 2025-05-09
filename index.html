@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayara Travels - Premium Travel Agency</title>
+    <meta name="description" content="Sayara Travels offers premium travel experiences in Sri Lanka. Discover our handpicked destinations and luxury travel packages.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +94 11 234 5678</span>
+                    <span><i class="fas fa-envelope"></i> info@sayaratravels.com</span>
+                </div>
+                <div class="auth-links">
+                    <a href="#">Sign In</a>
+                    <span class="divider">|</span>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">Sayara <span>Travels</span></a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu">
+                    <div class="nav-menu-close"><i class="fas fa-times"></i></div>
+                    <li style="--item-index: 0"><a href="#home" class="active">Home</a></li>
+                    <li class="dropdown" style="--item-index: 1">
+                        <a href="#destinations">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#destinations">Popular Destinations</a>
+                            <a href="#">Beach Getaways</a>
+                            <a href="#">Cultural Experiences</a>
+                            <a href="#">Wildlife Tours</a>
+                        </div>
+                    </li>
+                    <li class="dropdown" style="--item-index: 2">
+                        <a href="#packages">Travel Packages <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#packages">Featured Packages</a>
+                            <a href="#">Honeymoon Specials</a>
+                            <a href="#">Adventure Tours</a>
+                            <a href="#">Luxury Retreats</a>
+                        </div>
+                    </li>
+                    <li style="--item-index: 3"><a href="#about">About Us</a></li>
+                    <li style="--item-index: 4"><a href="#contact">Contact</a></li>
+                    <li class="book-now" style="--item-index: 5"><a href="#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1607968565043-c35d775d5088?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080&q=80');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <h1>Discover the Beauty of Sri Lanka</h1>
+                    <p>Experience luxury travel with our handpicked destinations and premium services</p>
+                    <a href="#destinations" class="btn btn-primary">Explore Destinations</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1550951941-aa86dfeee603?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080&q=80');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <h1>Unforgettable Journeys Await</h1>
+                    <p>Create memories that last a lifetime with our carefully crafted experiences</p>
+                    <a href="#packages" class="btn btn-primary">View Packages</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1553774519-5e5c27f2df6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080&q=80');">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <h1>Personalized Travel Experiences</h1>
+                    <p>Each journey is tailored to your preferences for an exceptional travel experience</p>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="scroll-down">
+            <a href="#destinations">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Popular Places</span>
+                <h2>Top Destinations</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1546708723-b8ec9d474c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sigiriya Rock Fortress">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Sigiriya Rock Fortress</h3>
+                        <p>Ancient palace and fortress complex with stunning views</p>
+                        <a href="#" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ella Train Journey">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Ella Train Journey</h3>
+                        <p>One of the most scenic train rides in the world</p>
+                        <a href="#" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1588270161293-19ec5efdc2af?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galle Fort">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Galle Fort</h3>
+                        <p>Historic fortified city with colonial architecture</p>
+                        <a href="#" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nine Arch Bridge">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Nine Arch Bridge</h3>
+                        <p>Iconic railway bridge nestled in lush green hills</p>
+                        <a href="#" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1591017880796-4a2bd9bd04c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Unawatuna Beach">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Unawatuna Beach</h3>
+                        <p>Beautiful golden sand beach with crystal clear waters</p>
+                        <a href="#" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1627894566121-ae27d50578de?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Yala National Park">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Yala National Park</h3>
+                        <p>Renowned wildlife sanctuary with diverse ecosystems</p>
+                        <a href="#" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <a href="#" class="btn btn-secondary">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Banner -->
+    <section class="parallax-banner">
+        <div class="parallax-content">
+            <h2>Experience the Magic of Sri Lanka</h2>
+            <p>From ancient cities to pristine beaches, discover the wonder of this tropical paradise</p>
+            <a href="#packages" class="btn btn-light">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Travel Deals</span>
+                <h2>Popular Packages</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1513049320785-924c422c6c6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cultural Triangle Explorer">
+                        <div class="package-price">$899</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="reviews">4.7 (126 reviews)</span>
+                        </div>
+                        <h3>Cultural Triangle Explorer</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 7 Days</span>
+                        </div>
+                        <p>Discover the ancient cities of Anuradhapura, Polonnaruwa, Sigiriya, and Dambulla on this cultural tour.</p>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1540759938232-896a5293f144?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beach Paradise Escape">
+                        <div class="package-price">$1,199</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="reviews">5.0 (98 reviews)</span>
+                        </div>
+                        <h3>Beach Paradise Escape</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 9 Days</span>
+                        </div>
+                        <p>Relax and unwind at the stunning beaches of Mirissa, Tangalle, and Unawatuna with luxury accommodations.</p>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1606996850759-bebef09d8e46?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wildlife Safari Adventure">
+                        <div class="package-price">$1,049</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="reviews">4.2 (75 reviews)</span>
+                        </div>
+                        <h3>Wildlife Safari Adventure</h3>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 6 Days</span>
+                        </div>
+                        <p>Experience the incredible wildlife of Yala National Park and Udawalawe with expert guides and luxury tented camps.</p>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <a href="#" class="btn btn-secondary">View All Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">What We Offer</span>
+                <h2>Our Premium Services</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Personalized Travel Planning</h3>
+                    <p>Our travel experts craft bespoke itineraries tailored to your preferences, interests, and travel style.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Luxury Accommodations</h3>
+                    <p>Stay at carefully selected luxury hotels, boutique properties, and unique accommodations throughout your journey.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Private Transportation</h3>
+                    <p>Enjoy comfortable and convenient private transfers with professional drivers throughout your trip.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Culinary Experiences</h3>
+                    <p>Discover authentic Sri Lankan cuisine through curated dining experiences and cooking classes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1565873965718-6bfa1961985e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About Sayara Travels">
+                </div>
+                <div class="about-text">
+                    <span class="subtitle">About Us</span>
+                    <h2>Your Premium Travel Partner in Sri Lanka</h2>
+                    <div class="section-line"></div>
+                    <p>Sayara Travels is a premier luxury travel agency specializing in bespoke travel experiences throughout Sri Lanka. With over 15 years of experience, we pride ourselves on creating memorable journeys that showcase the very best of our beautiful island.</p>
+                    <p>Our experienced team of travel consultants are passionate about Sri Lanka and dedicated to providing exceptional service from your initial inquiry to your return home.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Personalized itineraries</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert local guides</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 customer support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unique experiences</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Happy Travelers</span>
+                <h2>Client Testimonials</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Our Sri Lanka tour with Sayara Travels exceeded all expectations. The attention to detail, personalized service, and exceptional guides made our family vacation truly unforgettable. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Thompson">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Thompson</h4>
+                                <p>London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"From the moment we arrived, everything was flawlessly organized. The accommodations were luxurious, and the experiences were unique. Sayara Travels created the perfect honeymoon for us!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Michael Chen">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Vancouver, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"As a solo traveler, safety and authentic experiences were my priorities. Sayara Travels delivered on both fronts with an amazing itinerary that allowed me to truly connect with Sri Lanka's culture and people."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Emma Rodriguez">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emma Rodriguez</h4>
+                                <p>Madrid, Spain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Our Office</h4>
+                                <p>42 Palm Avenue, Colombo 03, Sri Lanka</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Call Us</h4>
+                                <p>+94 11 234 5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email Us</h4>
+                                <p>info@sayaratravels.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest offers, travel tips, and exclusive deals.</p>
+                </div>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-light">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Sayara <span>Travels</span></h3>
+                    <p>Your premium travel partner in Sri Lanka offering unforgettable luxury experiences.</p>
+                    
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Destinations</h3>
+                    <ul>
+                        <li><a href="#">Sigiriya</a></li>
+                        <li><a href="#">Galle</a></li>
+                        <li><a href="#">Ella</a></li>
+                        <li><a href="#">Kandy</a></li>
+                        <li><a href="#">Mirissa</a></li>
+                        <li><a href="#">Yala</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 42 Palm Avenue, Colombo 03, Sri Lanka</p>
+                    <p><i class="fas fa-phone-alt"></i> +94 11 234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@sayaratravels.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sayara Travels. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/94112345678" aria-label="Contact us via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Chat with us</span>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
